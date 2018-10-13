@@ -1,0 +1,26 @@
+<div>
+  <form #loginForm = "ngForm" (ngSubmit) = "loginUser(loginForm)" >
+    <label for= "email">Email</label>
+  <input type ="text" name ="email" ngModel>
+  <label for= "password">password</label>
+  <input type ="password" name ="password" ngModel>
+  <button type="submit">Submit</button>
+  <!--<div *ngIf="ngForm.onSubmit()">-->
+     <div>
+    <span>{{selected.user.email}}</span>
+  </div> 
+  <div>
+    <span>{{selected.user.token}}</span>
+  </div>
+  <div>
+    <span>{{selected.user.username}}</span>
+  </div> 
+  <div>
+    <span>{{selected.user.bio}}</span>
+  </div>
+  <div>
+    <span><img src={{selected.user.image}} height="200px" width="200px"></span>
+  </div> 
+<!--</div>-->
+</form>
+</div>
